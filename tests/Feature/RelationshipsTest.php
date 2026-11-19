@@ -117,7 +117,7 @@ describe('Book Model Relationships', function () {
         $book = new Book();
         $relation = $book->genres();
 
-        expect($relation->getTable())->toContain('books_genres');
+        expect($relation->getTable())->toContain('book_genre');
     });
 });
 
@@ -153,7 +153,7 @@ describe('Genre Model Relationships', function () {
         $genre = new Genre();
         $relation = $genre->books();
 
-        expect($relation->getTable())->toContain('books_genres');
+        expect($relation->getTable())->toContain('book_genre');
     });
 });
 

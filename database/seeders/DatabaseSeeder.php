@@ -43,8 +43,8 @@ class DatabaseSeeder extends Seeder
             ['title' => 'Dracula', 'publisher' => 'Archibald Constable and Company'],
         ]);
 
-        // Seed books_genres (pivot table)
-        DB::table('books_genres')->insert([
+        // Seed book_genre (pivot table)
+        DB::table('book_genre')->insert([
             ['book_id' => 1, 'genre_id' => 1], // Dune - Science Fiction
             ['book_id' => 2, 'genre_id' => 2], // The Hobbit - Fantasy
             ['book_id' => 3, 'genre_id' => 3], // The Da Vinci Code - Mystery
